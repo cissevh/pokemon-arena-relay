@@ -1,0 +1,9 @@
+# Render Blueprint: New + -> Blueprint -> pick this repository -> Apply.
+services:
+  - type: web
+    name: pokemon-arena-relay
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
